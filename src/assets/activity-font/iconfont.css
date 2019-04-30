@@ -1,0 +1,29 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1556571150224'); /* IE9 */
+  src: url('iconfont.eot?t=1556571150224#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAO4AAsAAAAACHgAAANpAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqEIINFATYCJAMQCwoABCAFhG0HWRtIBxEVnI/IfiTYjrkK4MfFgciQ1CQ1wQPl+b1Bkmn9FxLTtdPTij5BPicANueafhQ2wgzlW/ToCykN0suyp/85ZrpITM9vs7lkhBbtTWejBBpYx2WQ3QGdIN8yvDro3boZAgiSjSKIOvWatMGg0RYJQAwZ2L8nJmZEl1QKDAI7Z6dGLMPCyPnyNrDU/X3xlVLCgMRSaLdq0a9uH2p8KPNpqXJ9ly7Kxe3ODjD7QAFFAA1iQK6zF8pPFkERlP5GUw4wGCR8KPOh56elvo/FS1Ea/V8eSAQKhI1WHgagDJFS8KGMyYGEDz05EPBpqYqDROv5BogCe+Aioc3Sjd/Gimjy1KYvEA4H9DUTF+wUztpdC3ektVdvD0eIVoKCdtEKIe0TF6zJJa1duPq8VZMWpFuzNv3k8II1ibWhyGovzYRVHcrQAoE8QqAVWtLSqbWySYagBo8wTB7j6dOPZz/F1e7561fPbjx0L3TkQZXk2QWn3TMLz41KXLp15cyG/beDRx9W9xLyRObaCvfdGLHzzUhTI3q+Wo2lkbweMbL1iOkCvGlSlKzx6KRYnEqvahgPK+P2Y8qVHBzskLdo71I171c1yZhn3PMDtpZ9/afVg4rGrHeS8aSz3ng5SX1jB05wGusCjiP7ZPIr5n0yXqj1sEC+Q5/pUebPgenT26Y6laqtszVXztzXn34/u7B2zvOnFodKl8dtp/3KeR0jAPBddUC54J9TV1RNANVOPrnNs0jf/tyJ7rEq/03oMLsefZ8ddQO+q2kmulcisOimioBNWpZoJq1FqSlUQpoW3LW4BIK6F3zsTcWLLtRpwXEQmJiIAYlDVlAY8iA1tghYhCgDNobqEKQw9feHSM0oFEIHgELMRiCIsw8kUc6BIs4dpMY+B4t0fAebuFAQpJ1IfWKIfAIRV0dGJWhB/yAampxhkZVXeUO/DIqjEpf+Qp5jBNqqSWauOCF3sWZ++07EgWMa4YJuh8NAkJkSGqmCSD7Utcv7psrQWKw4MipBC/oH0dDk7M6ySv38Df0yKC5pKHG/kOc4OrRVA0BelROo4VTGz2/fiThynmMa4YLtOOhJgpw/LaGRKjSI50NNtHJQZTW8ejzDQ0AQbaUWUiihhcVuQlQ0mFWTzyp+l31U/19+xI206cr4oczIBicpCgAAAA==') format('woff2'),
+  url('iconfont.woff?t=1556571150224') format('woff'),
+  url('iconfont.ttf?t=1556571150224') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1556571150224#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiaoliangpaixu:before {
+  content: "\e661";
+}
+
+.icon-xiaoliangzuigao:before {
+  content: "\e634";
+}
+
+.icon-24gl-percent:before {
+  content: "\e88f";
+}
+
