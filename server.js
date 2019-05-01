@@ -35,6 +35,8 @@ server.post("/login", (req, res) => {
   }
 });
 
+server.use("/api", router);
+
 server.use("/api", (req, res, next) => {
   if (req.get("Authorization")) {
     next();
@@ -43,8 +45,6 @@ server.use("/api", (req, res, next) => {
   }
 });
 
-server.use("/api", router);
-
 server.listen(45560, () => {
-  console.log("JSON Server is running");
+  console.log("server is running http://localhost:45560");
 });
