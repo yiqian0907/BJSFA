@@ -4,17 +4,18 @@ import router from "./router";
 import store from "./store";
 import VeeValidate from "vee-validate";
 import { Loadmore } from "mint-ui";
-
 import "./lib/hotcss";
-
-import "mint-ui/lib/style.css";
 import "./lib/common.scss";
+import "mint-ui/lib/style.css";
+
+
+Vue.use(VeeValidate);
 
 Vue.config.productionTip = false;
-Vue.use(VeeValidate);
 Vue.component(Loadmore.name, Loadmore);
+
 router.beforeEach((to, from, next) => {
-  if (to.path != "/") {
+  if (to.path !== "/") {
     if (!store.state.loginUser) {
       next("/");
     } else {
@@ -23,8 +24,9 @@ router.beforeEach((to, from, next) => {
   }
   next();
 });
+
 new Vue({
-  router,
   store,
+  router: router,
   render: h => h(App)
 }).$mount("#app");
