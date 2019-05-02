@@ -3,9 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import VeeValidate from "vee-validate";
-import { Loadmore } from "mint-ui";
-import { Picker } from "mint-ui";
-import { Popup } from "mint-ui";
+import { Loadmore, Picker, Popup } from "mint-ui";
 
 import "./lib/hotcss";
 
