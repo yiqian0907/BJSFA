@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     toStoreActivity() {
-      this.$emit("storeClick", this.id);
+      this.$emit("storeClick", { id: this.id, name: this.name });
     }
   }
 };
