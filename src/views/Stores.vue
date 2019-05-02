@@ -61,9 +61,10 @@ export default {
     });
   },
   methods: {
-    storeClick(id) {
-      //   console.log(id);
-      this.$router.push(`/dnhd/${id}`);
+    storeClick(storeInfo) {
+      this.$store.commit("changeCurrentStoreName", storeInfo.name);
+      this.$store.commit("clearCartBeforeChangeStore");
+      this.$router.push(`/dnhd/${storeInfo.id}`);
     }
   }
 };

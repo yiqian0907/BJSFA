@@ -8,6 +8,8 @@ import Stores from "./views/Stores.vue";
 import Activity from "./views/Activity.vue";
 import PlaceOrder from "./views/PlaceOrder.vue";
 import ProductSel from "./views/ProductSel.vue";
+import Cart from "./views/Cart.vue";
+import SubmitOrder from "./views/SubmitOrder.vue";
 Vue.use(Router);
 
 export default new Router({
@@ -53,6 +55,18 @@ export default new Router({
       name: "productSel",
       // props: true,
       component: ProductSel
+    },
+    {
+      path: "/gwc",
+      name: "cart",
+      // props: true,
+      component: Cart
+    },
+    {
+      path: "/tjdd/:totalPrice",
+      name: "submitOrder",
+      props: true,
+      component: SubmitOrder
     },
     {
       path: "/about",

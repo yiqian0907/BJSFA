@@ -32,5 +32,11 @@ export default {
   },
   getProductListsInfo() {
     return axios.get("http://143.167.209.27:45560/api/products");
+  },
+  getWarehouse() {
+    return axios.get("http://143.167.209.27:45560/api/warehouse");
+  },
+  submitOrder(data) {
+    return axios.post("http://143.167.209.27:45560/api/orders", data);
   }
 };

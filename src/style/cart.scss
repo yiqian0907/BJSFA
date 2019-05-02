@@ -1,0 +1,21 @@
+@import "../lib/px2rem.scss";
+
+@mixin cartMark($top){
+    width: px2rem(16);
+        height: px2rem(16);
+        // background-color: #00a2eb;
+        border-radius: 50%;
+        position: absolute;
+        top: $top;
+        left: px2rem(28);
+        &::before {
+          content: "";
+          width: px2rem(23);
+          height: px2rem(23);
+          border-radius: 50%;
+          border: 1px solid #7a7a7a;
+          position: absolute;
+          top: px2rem(-4);
+          left: px2rem(-4);
+        }
+}
