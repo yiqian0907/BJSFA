@@ -16,27 +16,27 @@ axios.interceptors.request.use(
 );
 export default {
   login(data) {
-    return axios.post("http://143.167.209.27:45560/login", data);
+    return axios.post("http://143.167.210.245:45560/login", data);
   },
   getUserData() {
-    return axios.get("http://143.167.209.27:45560/api/user");
+    return axios.get("/api/user");
   },
   getNotices() {
-    return axios.get("http://143.167.209.27:45560/api/notices");
+    return axios.get("/api/notices");
   },
   getStoresInfo() {
-    return axios.get("http://143.167.209.27:45560/api/stores");
+    return axios.get("/api/stores");
   },
   getStorePerformance(id) {
-    return axios.get(`http://143.167.209.27:45560/api/performance/${id}`);
+    return axios.get(`/api/performance/${id}`);
   },
   getProductListsInfo() {
-    return axios.get("http://143.167.209.27:45560/api/products");
+    return axios.get("/api/products");
   },
   getWarehouse() {
-    return axios.get("http://143.167.209.27:45560/api/warehouse");
+    return axios.get("/api/warehouse");
   },
   submitOrder(data) {
-    return axios.post("http://143.167.209.27:45560/api/orders", data);
+    return axios.post("/api/orders", data);
   }
 };

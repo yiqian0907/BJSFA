@@ -94,6 +94,14 @@ export default {
     }
   },
   methods: {
+    updateSelectWarehouseAll(firstIndex, secondIndex, state) {
+      this.$set(this.selectWarehouseAll[firstIndex], secondIndex, state);
+      this.$set(
+        this.selectWarehouseAll,
+        firstIndex,
+        this.selectWarehouseAll[firstIndex]
+      );
+    },
     submitOrder() {
       let productsInCart = JSON.parse(localStorage.getItem("productsInCart"));
       let orderedPro = [];
@@ -114,15 +122,13 @@ export default {
       if (this.selAll) {
         for (let i = 0; i < this.selectWarehouseAll.length; i++) {
           for (let j = 0; j < this.selectWarehouseAll[i].length; j++) {
-            this.$set(this.selectWarehouseAll[i], j, true);
-            this.$set(this.selectWarehouseAll, i, this.selectWarehouseAll[i]);
+            this.updateSelectWarehouseAll(i, j, true);
           }
         }
       } else {
         for (let i = 0; i < this.selectWarehouseAll.length; i++) {
           for (let j = 0; j < this.selectWarehouseAll[i].length; j++) {
-            this.$set(this.selectWarehouseAll[i], j, false);
-            this.$set(this.selectWarehouseAll, i, this.selectWarehouseAll[i]);
+            this.updateSelectWarehouseAll(i, j, false);
           }
         }
       }
@@ -131,23 +137,13 @@ export default {
       for (let i = 0; i < this.selectWarehouseAll[index].length; i++) {
         if (!this.selectWarehouseAll[index][i]) {
           for (let j = 0; j < this.selectWarehouseAll[index].length; j++) {
-            this.$set(this.selectWarehouseAll[index], j, true);
-            this.$set(
-              this.selectWarehouseAll,
-              index,
-              this.selectWarehouseAll[index]
-            );
+            this.updateSelectWarehouseAll(index, j, true);
           }
           return;
         }
       }
       for (let i = 0; i < this.selectWarehouseAll[index].length; i++) {
-        this.$set(this.selectWarehouseAll[index], i, false);
-        this.$set(
-          this.selectWarehouseAll,
-          index,
-          this.selectWarehouseAll[index]
-        );
+        this.updateSelectWarehouseAll(index, i, false);
       }
     },
     allChildrenSelected(index) {
@@ -161,15 +157,10 @@ export default {
     childrenChangeSel(indexes) {
       let warehouseIndex = indexes.warehouseIndex;
       let productIndex = indexes.productIndex;
-      this.$set(
-        this.selectWarehouseAll[warehouseIndex],
+      this.updateSelectWarehouseAll(
+        warehouseIndex,
         productIndex,
         !this.selectWarehouseAll[warehouseIndex][productIndex]
-      );
-      this.$set(
-        this.selectWarehouseAll,
-        warehouseIndex,
-        this.selectWarehouseAll[warehouseIndex]
       );
     },
     changeQuantity(product) {
@@ -221,8 +212,6 @@ export default {
           position: relative;
           display: flex;
           justify-content: space-between;
-          .warehouse-name {
-          }
           .notes {
             color: #10903d;
             i.icon {

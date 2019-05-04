@@ -66,7 +66,6 @@ const menuCellData = [
   },
   { url: "/gstg", imgURL: require("../assets/img/gstg.png"), title: "公司通告" }
 ];
-// @ is an alias to /src
 import TopHead from "../components/TopHead";
 import Pie from "../components/Pie";
 import MenuCell from "../components/MenuCell";
@@ -101,21 +100,21 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
-  // align-items: stretch;
   align-content: stretch;
   .icon {
-    color: #fff;
+    // color: red;
+    color: #ffffff;
   }
   .pie-chart-wrap {
     width: 100%;
     height: px2rem(370);
-    color: #000;
     .cur-date {
       font-size: px2rem(28);
       text-align: center;
       padding: 40px 0 25px;
       letter-spacing: px2rem(3);
     }
+    color: #000000;
     .pie-chart {
       width: 100%;
       display: flex;
@@ -123,8 +122,8 @@ export default {
     }
   }
   .menu-wrap {
-    flex: 1 1;
     display: flex;
+    flex: 1;
     flex-flow: row wrap;
     padding: 0 px2rem(28);
     border-top: 1px solid #ccc;

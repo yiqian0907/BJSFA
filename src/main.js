@@ -6,18 +6,18 @@ import VeeValidate from "vee-validate";
 import { Loadmore, Picker, Popup } from "mint-ui";
 
 import "./lib/hotcss";
-
-import "mint-ui/lib/style.css";
 import "./lib/common.scss";
+import "mint-ui/lib/style.css";
+
+Vue.use(VeeValidate);
 
 Vue.config.productionTip = false;
-Vue.use(VeeValidate);
 Vue.component(Loadmore.name, Loadmore);
 Vue.component(Picker.name, Picker);
 Vue.component(Popup.name, Popup);
 
 router.beforeEach((to, from, next) => {
-  if (to.path != "/") {
+  if (to.path !== "/") {
     if (!store.state.loginUser) {
       next("/");
     } else {
@@ -26,8 +26,9 @@ router.beforeEach((to, from, next) => {
   }
   next();
 });
+
 new Vue({
-  router,
   store,
+  router: router,
   render: h => h(App)
 }).$mount("#app");
