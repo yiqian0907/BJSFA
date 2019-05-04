@@ -3,12 +3,11 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import VeeValidate from "vee-validate";
-import { Loadmore，Picker, Popup } from "mint-ui";
+import { Loadmore, Picker, Popup } from "mint-ui";
 
-import "./lib/hotcss";
+import "./lib/hotcss/hotcss";
 import "./lib/common.scss";
 import "mint-ui/lib/style.css";
-
 
 Vue.use(VeeValidate);
 
