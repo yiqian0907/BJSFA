@@ -16,7 +16,7 @@ axios.interceptors.request.use(
 );
 export default {
   login(data) {
-    return axios.post("http://143.167.210.245:45560/login", data);
+    return axios.post("/login", data);
   },
   getUserData() {
     return axios.get("/api/user");

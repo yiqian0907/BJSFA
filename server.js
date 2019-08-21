@@ -46,5 +46,5 @@ server.use("/api", (req, res, next) => {
 });
 
 server.listen(45560, () => {
-  console.log("server is running http://localhost:45560");
+  console.log("server is running http://143.167.208.171:45560");
 });

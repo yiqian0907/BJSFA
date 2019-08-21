@@ -2866,6 +2866,44 @@
         ]
       ],
       "id": 4
+    },
+    {
+      "store_name": "准程斗事",
+      "order": [
+        [
+          {
+            "code": 89012381,
+            "name": "北京从论易现要才近九装定器调际",
+            "imgURL": "../assets/logo.png",
+            "size": 15,
+            "price": 61.2,
+            "inventory": 3272,
+            "warehouse_id": 17,
+            "selectedWarehouse": "了教无口件其话东证始",
+            "quantity": 5
+          }
+        ]
+      ],
+      "id": 5
+    },
+    {
+      "store_name": "工进导华",
+      "order": [
+        [
+          {
+            "code": 89012381,
+            "name": "北京从论易现要才近九装定器调际",
+            "imgURL": "../assets/logo.png",
+            "size": 15,
+            "price": 61.2,
+            "inventory": 3272,
+            "warehouse_id": 1,
+            "selectedWarehouse": "包思林而七感历花之公",
+            "quantity": 4
+          }
+        ]
+      ],
+      "id": 6
     }
   ]
 }
